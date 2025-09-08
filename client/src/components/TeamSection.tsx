@@ -23,6 +23,13 @@ const TeamSection: React.FC = () => {
   const teamMembers: TeamMember[] = [
 
     {
+      name: "Laxman Bista",
+      role: "Founder & Chief Financial Officer (CFO)",
+      image: teamPageImage2,
+      bio: "Laxman, a Dartmouth graduate, understands the true cost of farming because he's lived it. Coming from a farming background in landlocked Nepal, he knows the urgency of addressing food insecurity. As CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers. His leadership is grounded in numbers and in empathy.",
+    },
+
+    {
       name: "Puja Khatri",
       role: "Co-Founder & Chief Executive Officer (CEO)",
       image: teamPageImage3,
@@ -43,12 +50,7 @@ const TeamSection: React.FC = () => {
       image: teamPageImage4,
       bio: "Devaki is a high school graduate who believes in the power of technology to create real-world impact. With a passion for grassroots research, she has visited villages, gathered data, and listened closely to farmers' stories. As Web Developer and Research Analyst at KrishiMitra, Devaki bridges the gap between tech and agriculture, helping farmers build a digital presence and unlock new opportunities for growth and visibility.",
     },
-    {
-      name: "Laxman Bista",
-      role: "Chief Financial Officer (CFO)",
-      image: teamPageImage2,
-      bio: "Laxman, a Dartmouth graduate, understands the true cost of farming because he's lived it. Coming from a farming background in landlocked Nepal, he knows the urgency of addressing food insecurity. As CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers. His leadership is grounded in numbers and in empathy.",
-    },
+    
 
     {
       name: "Manish Acharya",
@@ -88,8 +90,8 @@ const TeamSection: React.FC = () => {
         </div>
 
         <div className="mt-12">
-          {/* First row - 2 people centered */}
-          <div className="flex justify-center gap-6 mb-6">
+          {/* First row - 3 people */}
+          <div className="flex justify-center gap-6 mb-6 flex-wrap">
             <div className="w-full max-w-sm group relative">
               <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="h-72 overflow-hidden relative">
@@ -126,11 +128,7 @@ const TeamSection: React.FC = () => {
                 </CardContent>
               </Card>
             </div>
-          </div>
-
-          {/* Second row - Devaki, Laxman, Manish */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div className="group relative">
+            <div className="w-full max-w-sm group relative">
               <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="h-72 overflow-hidden relative">
                   <img
@@ -148,7 +146,11 @@ const TeamSection: React.FC = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className="group relative">
+          </div>
+
+          {/* Second row - 2 people centered */}
+          <div className="flex justify-center gap-6 mb-6">
+            <div className="w-full max-w-sm group relative">
               <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="h-72 overflow-hidden relative">
                   <img
@@ -166,7 +168,7 @@ const TeamSection: React.FC = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className="group relative">
+            <div className="w-full max-w-sm group relative">
               <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="h-72 overflow-hidden relative">
                   <img
