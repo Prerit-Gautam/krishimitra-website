@@ -33,19 +33,21 @@ export const SOLUTION_POINTS = [
 
 export const FEATURES = [
   {
+    title: "Digital Marketplace Access",
+    description: "Connect directly with buyers and access a digital marketplace to sell your produce at competitive prices.",
+    icon: "TrendingUp",
+  },
+  {
     title: "AI-powered digital platform",
     description: "Our machine learning algorithms analyze multiple data sources to provide personalized recommendations for each farmer's unique situation.",
     icon: "Cpu",
+    status: "In Progress",
   },
   {
-    title: "Personalized crop advisory",
-    description: "Get tailored advice on crop selection, planting methods, pest management, and fertilization based on your specific soil, climate, and resources.",
-    icon: "Sprout",
-  },
-  {
-    title: "Optimal harvest times",
-    description: "Receive notifications about the best time to harvest your crops based on weather forecasts, market demand, and crop maturity indicators.",
-    icon: "Clock",
+    title: "Financial Literacy Trainings",
+    description: "Access training modules to improve financial management skills, including budgeting, credit, and investment.",
+    icon: "GraduationCap",
+    status: "In Progress",
   },
   {
     title: "Market price trends",
@@ -61,6 +63,11 @@ export const FEATURES = [
     title: "Customized farming tips",
     description: "Learn modern, sustainable farming techniques that are specifically adapted for small-scale agriculture in your region to improve productivity.",
     icon: "GraduationCap",
+  },
+  {
+    title: "Optimal harvest times",
+    description: "Receive notifications about the best time to harvest your crops based on weather forecasts, market demand, and crop maturity indicators.",
+    icon: "Clock",
   },
 ];
 

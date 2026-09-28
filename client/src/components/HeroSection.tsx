@@ -4,7 +4,7 @@ import { ArrowRight, Users, ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage1 from "../assets/slide.jpg";
 import heroImage2 from "../assets/slide2.jpg";
 import heroImage3 from "../assets/slide3.jpg";
-import appDemoVideo from "../assets/app_demo.webm";
+import appDemoVideo from "../assets/app_demo.mp4";
 import { Link } from "react-router-dom";
 
 const heroImages = [heroImage1, heroImage2, heroImage3];

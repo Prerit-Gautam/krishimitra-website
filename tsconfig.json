@@ -1,7 +1,6 @@
 {
   "include": [
-    "src/**/*",
-    "../shared/**/*"
+    "client/src/**/*"
   ],
   "exclude": [
     "node_modules",
@@ -27,15 +26,11 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "types": [
-      "node",
       "vite/client"
     ],
     "paths": {
       "@/*": [
-        "./src/*"
-      ],
-      "@shared/*": [
-        "../shared/*"
+        "./client/src/*"
       ]
     }
   }

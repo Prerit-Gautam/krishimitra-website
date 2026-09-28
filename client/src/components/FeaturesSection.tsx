@@ -14,19 +14,30 @@ interface Feature {
   title: string;
   description: string;
   icon: React.ReactNode;
+  status?: string;
 }
 
 const FeaturesSection: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   
   const features: Feature[] = [
-    
+    {
+      title: "Digital Marketplace Access",
+      description: "Connect directly with buyers and access a digital marketplace to sell your produce at competitive prices.",
+      icon: <TrendingUp className="h-6 w-6 text-white" />,
+    },
     {
       title: "AI driven personalized insights",
       description: "Get tailored advice on crop selection, planting methods, pest management, and fertilization based on your specific soil, climate, and resources.",
-      icon: <Sprout className="h-6 w-6 text-white" />,
+      icon: <Cpu className="h-6 w-6 text-white" />,
+      status: "In Progress",
     },
-    
+    {
+      title: "Financial Literacy Trainings",
+      description: "Access training modules to improve financial management skills, including budgeting, credit, and investment.",
+      icon: <GraduationCap className="h-6 w-6 text-white" />,
+      status: "In Progress",
+    },
     {
       title: "Market price trends",
       description: "Stay informed about current and forecasted market prices for your crops to make better decisions about when and where to sell.",
@@ -41,26 +52,6 @@ const FeaturesSection: React.FC = () => {
       title: "Customized farming tips",
       description: "Learn modern, sustainable farming techniques that are specifically adapted for small-scale agriculture in your region to improve productivity.",
       icon: <GraduationCap className="h-6 w-6 text-white" />,
-    },
-    {
-      title: "Disease and Pest Detection",
-      description: "Utilize advanced algorithms for early detection and identification of common crop diseases and pests.",
-      icon: <Sprout className="h-6 w-6 text-white" />,
-    },
-    {
-      title: "Digital Marketplace Access",
-      description: "Connect directly with buyers and access a digital marketplace to sell your produce at competitive prices.",
-      icon: <TrendingUp className="h-6 w-6 text-white" />,
-    },
-    {
-      title: "Financial Literacy Trainings",
-      description: "Access training modules to improve financial management skills, including budgeting, credit, and investment.",
-      icon: <GraduationCap className="h-6 w-6 text-white" />,
-    },
-    {
-      title: "Soil Health Testing",
-      description: "Get insights into your soil's health through testing and receive recommendations for improving fertility and structure.",
-      icon: <Sprout className="h-6 w-6 text-white" />,
     },
     {
       title: "Optimal harvest times",
@@ -95,8 +86,15 @@ const FeaturesSection: React.FC = () => {
               <Card className={`h-full bg-white bg-opacity-95 backdrop-filter backdrop-blur-sm rounded-lg overflow-hidden shadow-xl ${hoveredItem === index ? 'shadow-2xl ring-2 ring-[#82E0AA]' : 'shadow-lg'} transition-all duration-300`}>
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="mb-4">
-                    <div className="w-12 h-12 bg-[#196F3D] rounded-full flex items-center justify-center mb-4 shadow-lg transform transition-transform duration-300 hover:rotate-12">
-                      {feature.icon}
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 bg-[#196F3D] rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 hover:rotate-12">
+                        {feature.icon}
+                      </div>
+                      {feature.status && (
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-300 shadow-sm">
+                          {feature.status}
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-xl font-semibold text-[#196F3D]">{feature.title}</h3>
                   </div>
