@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import teamPageImage from "../assets/aakriti.jpg";
 import teamPageImage2 from "../assets/laxman bista.jpeg";
 import teamPageImage3 from "../assets/puja.png";
-import teamPageImage4 from "../assets/devaki.jpeg";
+import teamPageImage4 from "../assets/prerit.jpg";
 import teamPageImage5 from "../assets/small.jpg";
 import teamPageImage6 from "../assets/aakash.jpeg";
 // Assuming a generic advisor image exists or using a placeholder
@@ -43,7 +43,7 @@ const TeamSection: React.FC = () => {
       bio: "Aakriti, a current undergraduate at Soka University of America, brings heart and strategy together in her role as CMO. Hailing from Nepal, she's passionate about empowering marginalized communities and making sure no one is left behind. Through storytelling, outreach, and community-driven campaigns, Aakriti is building a brand that speaks to the people, and for the people driving both awareness and impact.",
     },
 
-  
+  //<--Devaki->
     {
       name: "Prerit Gautam",
       role: "Tech",
@@ -51,12 +51,12 @@ const TeamSection: React.FC = () => {
       bio:"Prerit is a highschool graduate. He is looking after the website and the app."
     },
     
-
+//manish acharya
     {
-      name: "Manish Acharya",
-      role: "Chief Technological Officer (CTO)",
+      name: "Gaurabh Sapkota",
+      role: "....",
       image: teamPageImage5,
-      bio: "Manish Acharya is a current undergraduate at Vanderbilt and a passionate tech enthusiast. With a deep understanding of system architecture and product development, Manish oversees KrishiMitra's technological foundation. He is dedicated to building scalable and innovative solutions that meet the real needs of farmers and bring lasting impact through technology.",
+      bio: "Gaurabh Sapkota is a Sophomore at Soka University Of America. He is the goat",
     },
   
     {
