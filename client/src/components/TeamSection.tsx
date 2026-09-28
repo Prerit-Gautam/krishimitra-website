@@ -45,10 +45,10 @@ const TeamSection: React.FC = () => {
 
   
     {
-      name: "Devaki Rawal",
-      role: "Web Developer and Research Analyst",
+      name: "Prerit Gautam",
+      role: "Tech",
       image: teamPageImage4,
-      bio: "Devaki is a high school graduate who believes in the power of technology to create real-world impact. With a passion for grassroots research, she has visited villages, gathered data, and listened closely to farmers' stories. As Web Developer and Research Analyst at KrishiMitra, Devaki bridges the gap between tech and agriculture, helping farmers build a digital presence and unlock new opportunities for growth and visibility.",
+      bio:"Prerit is a highschool graduate. He is looking after the website and the app."
     },
     
 
