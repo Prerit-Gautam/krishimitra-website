@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Mail, Phone, Globe, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { MapPin, Mail, Phone, Globe, Instagram, Linkedin } from "lucide-react";
 import { CONTACT_INFO, SOCIAL_LINKS } from "@/lib/constants";
 
 const ContactIcon: React.FC<{ icon: string; className?: string }> = ({ icon, className }) => {
@@ -22,10 +22,6 @@ const ContactIcon: React.FC<{ icon: string; className?: string }> = ({ icon, cla
 
 const SocialIcon: React.FC<{ icon: string; className?: string }> = ({ icon, className }) => {
   switch (icon) {
-    case "Facebook":
-      return <Facebook className={`h-5 w-5 ${className || ''}`} />;
-    case "Twitter":
-      return <Twitter className={`h-5 w-5 ${className || ''}`} />;
     case "Instagram":
       return <Instagram className={`h-5 w-5 ${className || ''}`} />;
     case "Linkedin":
@@ -64,10 +60,6 @@ const ContactSection: React.FC = () => {
         message: "",
       });
     }, 1000);
-  };
-
-  const handleSocialClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
   };
 
   return (
@@ -181,8 +173,9 @@ const ContactSection: React.FC = () => {
                       {SOCIAL_LINKS.map((social) => (
                         <a 
                           key={social.platform} 
-                          href={social.platform === "Instagram" ? "https://instagram.com/krishimitra2025" : "#"} 
-                          onClick={social.platform === "Instagram" ? undefined : handleSocialClick}
+                          href={social.url} 
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-neutral-700 hover:text-primary transition-colors"
                           aria-label={social.platform}
                         >

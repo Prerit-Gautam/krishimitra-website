@@ -186,10 +186,8 @@ export const CONTACT_INFO = [
 ];
 
 export const SOCIAL_LINKS = [
-  { platform: "Facebook", icon: "Facebook", url: "https://facebook.com/krishimitra" },
-  { platform: "Twitter", icon: "Twitter", url: "https://twitter.com/krishimitra" },
-  { platform: "Instagram", icon: "Instagram", url: "https://instagram.com/krishimitra2025" },
-  { platform: "LinkedIn", icon: "Linkedin", url: "https://linkedin.com/company/krishimitra" },
+  { platform: "Instagram", icon: "Instagram", url: "https://www.instagram.com/krishimitra2025/" },
+  { platform: "LinkedIn", icon: "Linkedin", url: "https://www.linkedin.com/company/krishimitra-co/" },
 ];
 
 export const FOOTER_LINKS = [

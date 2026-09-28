@@ -2,14 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { FOOTER_LINKS, SOCIAL_LINKS } from "@/lib/constants";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 const SocialIcon: React.FC<{ icon: string; className?: string }> = ({ icon, className }) => {
   switch (icon) {
-    case "Facebook":
-      return <Facebook className={`h-5 w-5 ${className || ''}`} />;
-    case "Twitter":
-      return <Twitter className={`h-5 w-5 ${className || ''}`} />;
     case "Instagram":
       return <Instagram className={`h-5 w-5 ${className || ''}`} />;
     case "Linkedin":
@@ -20,10 +16,6 @@ const SocialIcon: React.FC<{ icon: string; className?: string }> = ({ icon, clas
 };
 
 const Footer: React.FC = () => {
-  const handleSocialClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-  };
-
   return (
     <footer className="bg-[#196F3D] shadow-inner py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +59,8 @@ const Footer: React.FC = () => {
                 <a
                   key={social.platform}
                   href={social.url}
-                  onClick={handleSocialClick}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white hover:opacity-70 transition-opacity duration-300"
                   aria-label={social.platform}
                 >
@@ -83,3 +76,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+  
