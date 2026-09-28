@@ -24,9 +24,9 @@ const TeamSection: React.FC = () => {
 
     {
       name: "Laxman Bista",
-      role: "Founder & Chief Financial Officer (CFO)",
+      role: "Founder & Advisor",
       image: teamPageImage2,
-      bio: "Laxman, a Dartmouth graduate, understands the true cost of farming because he's lived it. Coming from a farming background in landlocked Nepal, he knows the urgency of addressing food insecurity. As CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers. His leadership is grounded in numbers and in empathy.",
+      bio: "Laxman, a Dartmouth graduate, understands the true cost of farming because he's lived it. Coming from a farming background in landlocked Nepal, he knows the urgency of addressing food insecurity. His leadership is grounded in numbers and in empathy.",
     },
 
     {
@@ -54,10 +54,9 @@ const TeamSection: React.FC = () => {
 //manish acharya
     {
       name: "Gaurabh Sapkota",
-      role: "....",
+      role: "Chief Financial Officer (CFO)",
       image: teamPageImage5,
-      bio: "Gaurabh Sapkota is a Sophomore at Soka University Of America. He is the goat",
-    },
+      bio: "Gaurabh Sapkota is a Sophomore at Soka University Of America.vAs CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers.",
   
     {
       name: "Mary Patrick Kavanaugh",
