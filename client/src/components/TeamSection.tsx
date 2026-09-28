@@ -56,8 +56,8 @@ const TeamSection: React.FC = () => {
       name: "Gaurabh Sapkota",
       role: "Chief Financial Officer (CFO)",
       image: teamPageImage5,
-      bio: "Gaurabh Sapkota is a Sophomore at Soka University Of America.vAs CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers.",
-  
+      bio: "Gaurabh Sapkota is a Sophomore at Soka University Of America.vAs CFO of KrishiMitra, he ensures that every financial decision supports sustainability, dignity, and long-term value for farmers."
+    },
     {
       name: "Mary Patrick Kavanaugh",
       role: "Advisor",
